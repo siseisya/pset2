@@ -11,7 +11,7 @@
 
   <?php 
   
-  echo "Welcome, this is your email : ";
+  echo "Welcome to this page, this is your email : ";
   echo  $_POST["femail"];
   
   
