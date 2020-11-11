@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <script>
+      function validateForm() {
+
+        var x = document.forms["myForm"]["femail"].value;
+        if(x == "") {
+            alert("Email must be filled out");
+            return false;
+        }
+
+        var y = document.forms["myForm"]["fpass"].value;
+        if(y == "") {
+            alert("Password must be filled out");
+            return false;
+        }
+      }
+
+</script>
+
+</head>
+<body>
+
+    <form action="register.php" method="post">
+
+    <label for="femail">Username</label>
+    <input type="text" id="femail" name="femail"
+    title = "Please enter your email"
+    pattern = ".+@gmail.com"  required>
+    
+    <br></br>
+
+    <label for="fpass">Password</label>
+    <input type="password" id="fpass" name="fpass" 
+     
+    title="Must contain at least one number and one uppercase and lowercase letter" required>
+    
+    <br></br>
+    <input type="submit" value="Submit">
+   
+</body>
+</html>
